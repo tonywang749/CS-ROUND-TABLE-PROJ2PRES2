@@ -13,5 +13,6 @@ def pig_latin(input):
     return input
 
 def main():
-    text = input("Enter a word: ")
-    print(f'In pig latin, your text would be {pig_latin(text)}')
+    text = input("Enter a bunch of words, separated by spaces: ")
+    for word in text.split():
+        print(f'In pig latin, your word ({word}) would be {pig_latin(word)}')
